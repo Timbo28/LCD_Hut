@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Panda Hut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/87d49354b2.js" crossorigin="anonymous"></script>
+    <script>
+      // Warte, bis das Dokument vollständig geladen ist
+      document.addEventListener('DOMContentLoaded', function () {
+        const checkbtn = document.querySelector('.checkbtn');
+        const title = document.querySelector('.title');
+        const main_navbar = document.querySelector('#main_navbar');
+        const overhead = document.querySelector('.overhead');
+    
+        checkbtn.addEventListener('click', function () {
+          title.classList.toggle('active');
+          checkbtn.classList.toggle('active');
+          main_navbar.classList.toggle('active');
+          overhead.classList.toggle('active');
+        });
+
+
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      
+      <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="overhead">The Panda</label>
+        <label class="title">The Panda</label>
+        
+      <nav >
+        <ul id="main_navbar">
+          <li> <a class="active" href="./index.html"><i class="fa-brands fa-fort-awesome" style="color: #823cf4;"></i> Home</a></li>
+          <li><a href="GIF.html"><i class="fa-brands fa-gitkraken" style="color: #823cf4;"></i> GIF's</a></li>
+          <li><a href="./Bilder.html"><i class="fa-brands fa-phoenix-squadron" style="color: #823cf4;"></i> Bilder</a></li>
+        </ul>
+        
+      </nav>
+      <div class="backgroundPic"></div>
+      <div class="uebergang"></div>
+    </div>
+
+
+  </body>
+</html>
